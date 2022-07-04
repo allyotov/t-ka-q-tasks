@@ -1,4 +1,5 @@
 import logging
+from parser import main as parser_main
 
 logger = logging.getLogger(__name__)
 
@@ -78,5 +79,8 @@ if __name__ == '__main__':
     assert task_1_2(0, 0, 2, 2, 0, 0, 2, 2) == 4
     assert task_1_2(0, 0, 2, 2, 0, 0, 5, 5) == 4
     assert task_1_2(-10, -10, 3, 3, 0, 0, 5, 5) == 9
+
+
+    parser_main()
 
     logger.debug('Все тесты прошли успешно')
