@@ -6,6 +6,7 @@ authors = ["Alexander Lyotov <sippie84@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+httpx = "^0.23.0"
 
 [tool.poetry.dev-dependencies]
 
