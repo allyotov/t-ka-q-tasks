@@ -1,5 +1,4 @@
 import logging
-from parser import main as parser_main
 
 logger = logging.getLogger(__name__)
 
@@ -66,11 +65,10 @@ def task_1_2(x1, y1, x2, y2, x3, y3, x4, y4):
 if __name__ == '__main__':
     logging.basicConfig(
         level=logging.DEBUG,
-        format='%(filename)s | %(levelname)s: %(message)s',  # noqa: WPS323
+        format='%(filename)s | %(levelname)s: %(message)s',
     )
     assert task_1_1("111111111110000000000000000") == 11 # индексы начинаются с нулевого, поэтому 12-й элемент имеет 11-й номер
     assert task_1_1("11111111111") == -1 # Если во входящей последовательности нет нулей, возвращаем -1
-
 
 
     assert task_1_2(1, 1, 2, 2, 3, 3, 4, 4) == False
